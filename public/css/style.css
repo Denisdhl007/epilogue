@@ -51,9 +51,21 @@ img {
   align-items: center;
 }
 
+.diamond {
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
 .container1Para {
   display: flex;
-  width: 37vw;
+  width: 25vw;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -64,6 +76,7 @@ img {
 .container1Button {
   background-color: #fff;
   border: 1px solid rgb(125, 125, 125);
+  border-radius: 10%;
   margin-top: 20px;
   padding: 10px;
   padding-left: 30px;
@@ -117,48 +130,100 @@ img {
 
 .card {
   width: 33vw;
-  height: 47vh;
+  height: 48vh;
   margin: 2vh;
   text-align: center;
   font-family: arial;
+  background-color: white;
 }
 
 .imageCard3h1 {
-  color: white;
+  display: flex;
+  height: 20vh;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
 }
 
-.textEtButton p {
+.text-Button p {
   color: rgb(125, 125, 125);
+  padding: 2vh;
 }
 
 .card button {
   border: none;
   outline: 0;
+  text-transform: uppercase;
   padding: 12px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
+  border: solid 2px rgb(161, 161, 161);
   text-align: center;
   cursor: pointer;
   width: 30%;
   font-size: 18px;
+  border-radius: 10%;
 }
 
-.textEtButton p {
-  padding: 2vh;
-}
-
-.textEtButton {
-  border: solid 3px black;
+.text-Button {
+  background-color: #fff;
 }
 
 .card button:hover {
   opacity: 0.7;
 }
 
+.container2 {
+  display: flex;
+  height: 25vh;
+  width: 70vw;
+  margin: 5vw 14vw;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container2Para {
+  display: flex;
+  width: 37vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: rgb(147, 147, 147);
+}
+
+.container2Button {
+  border: 1px solid rgb(125, 125, 125);
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: rgb(13, 13, 13);
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.container2Button:hover {
+  opacity: 0.7;
+}
+
+.seperator2 {
+  display: flex;
+  margin-top: 5vh;
+  width: 7vw;
+  border: 1px solid #7d7d7d;
+}
+
 .footerDiv {
   display: flex;
-  width: 90vw;
-  height: 25vh;
+  width: 100vw;
+  height: 20vh;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
@@ -168,34 +233,104 @@ img {
 .footerSocialMedia {
   display: flex;
   justify-content: center;
-  font-size: 30px;
-  letter-spacing: 10px;
+  font-size: 18px;
+  letter-spacing: 20px;
 }
 
 .footer-text {
   display: flex;
-  color: white;
+  color: rgb(179, 179, 179);
 }
 
 @media screen and (max-width: 390px) {
-  .footerDiv {
+  .container1 {
+    background-color: #fff;
     display: flex;
-    width: 89vw;
-    height: 20vh;
+    height: 52vh;
+    width: 88vw;
+    margin: 4vw 6vw;
     justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container1Para {
+    display: flex;
+    width: 55vw;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    color: #939393;
+  }
+  .card4 {
+    display: flex;
+    height: 220vh;
+    width: 89vw;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5vw;
+    align-content: center;
+  }
+  .card {
+    width: 87vw;
+    height: 55vh;
+    margin: 2vh;
+    text-align: center;
+    font-family: arial;
+    background-color: #fff;
+  }
+  .text-Button {
+    height: 1vh;
+  }
+  .container2 {
+    display: flex;
+    height: 52vh;
+    width: 70vw;
+    margin: 5vw 14vw;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container1h2 {
+    display: flex;
+  }
+  .container2Para {
+    display: flex;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #939393;
+  }
+  .footerDiv {
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-text {
+    display: flex;
+    width: 80vw;
+    height: 9vh;
+    margin: 5vw;
+    color: #969696;
+    justify-content: center;
     align-items: center;
   }
   .footerSocialMedia {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 10px;
-  }
-  .footer-text {
-    display: flex;
-    width: 80vw;
-    color: white;
   }
 }
